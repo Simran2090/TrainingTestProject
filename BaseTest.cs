@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Threading;
+using log4net;
 using NUnit.Framework;
 using OpenQA.Selenium.Remote;
 
@@ -10,8 +11,7 @@ namespace Demo
     [TestFixture]
     [Parallelizable(ParallelScope.Fixtures)]
     public class BaseTest : TrainingAutomation
-    {
-
+    { 
         /// <summary>
         /// verify if header elements can be found in all locales
         /// </summary>
@@ -31,8 +31,13 @@ namespace Demo
             SelectResourceFile("ukrainine");
             SelectLanguage("Українська");
             VerifyHeaderSection();
+            
         }
 
+        /// <summary>
+        /// Search's for trainings 
+        /// </summary>
+        /// <param name="browserName"></param>
         [Test]
         public void SearchTrainings(string browserName)
         {
@@ -82,3 +87,4 @@ namespace Demo
         }
     }
 }
+//2.41 version download for reporting issue 

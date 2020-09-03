@@ -1,0 +1,3 @@
+﻿2020-09-03 12:26:12,925 INFO [15] Demo.TrainingAutomation.Initialize - Set's up the browser ,Navigating to url and closing the accept cookies popup 
+2020-09-03 12:26:12,965 INFO [15] Demo.TrainingAutomation.Setup - Setting up the browser for the run
+2020-09-03 12:26:13,899 INFO [15] Demo.TrainingAutomation.NavigateToUrl - navigates to the url 
